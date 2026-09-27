@@ -1,0 +1,7 @@
+# Build artifacts (PlatformIO, if used later)
+.pio/
+build/
+
+# Editor / OS junk
+.vscode/
+.DS_Store
