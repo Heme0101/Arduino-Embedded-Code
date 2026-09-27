@@ -3,7 +3,7 @@
 #define PHOTORESISTOR_PIN A0
 #define luminositySamplesArraySize 100
 
-byte luminositySamplesArray[luminositySamplesArraySize] = { 0 };
+int luminositySamplesArray[luminositySamplesArraySize] = { 0 };
 
 unsigned long previousTime = 0;
 unsigned long frequentRecordingTime = 50; // Milliseconds
@@ -15,7 +15,7 @@ boolean calculationCompleted = false;
 
 long calculateAverage(long num){
   
-  for (int i = 0; i <= luminositySamplesArraySize; i++){
+  for (int i = 0; i < luminositySamplesArraySize; i++){
     num += luminositySamplesArray[i];
   }
   return num / luminositySamplesArraySize;
@@ -52,7 +52,7 @@ void loop() {
   }
   else{
   
-    for (int i = 0; i <= luminositySamplesArraySize; i++){
+    for (int i = 0; i < luminositySamplesArraySize; i++){
       delay(frequentRecordingTime);
       luminositySamplesArray[i] = analogRead(PHOTORESISTOR_PIN);
       Serial.print(".");

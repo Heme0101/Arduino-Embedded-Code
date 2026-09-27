@@ -9,7 +9,7 @@ int threshold = 200;
 
 void setup() {
 
-  for (int i = 0; i <= 2; i++){
+  for (int i = 0; i < 2; i++){
     pinMode(LED_PIN_ARRAY[i], OUTPUT);
   }
 

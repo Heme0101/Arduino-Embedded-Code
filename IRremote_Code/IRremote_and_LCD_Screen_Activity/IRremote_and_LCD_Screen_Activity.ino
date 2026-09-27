@@ -66,7 +66,7 @@ void toggleLED(int pinNumber){ // This function, toggleLED, will help turn LEDs 
 
 void turnOffLEDs(){ // This function turns off all the LEDs when called
 
-  for (int i = 0; i <= LED_ARRAY_SIZE; i++){
+  for (int i = 0; i < LED_ARRAY_SIZE; i++){
     digitalWrite(LED_ARRAY[i], LOW);
   }
 }
@@ -74,7 +74,7 @@ void turnOffLEDs(){ // This function turns off all the LEDs when called
 
 void LEDsLoopTinkering(){
   
-  for (int i = 0; i <= LED_ARRAY_SIZE; i++){ // For loop in order to turn off all LEDs at the start and place a mode
+  for (int i = 0; i < LED_ARRAY_SIZE; i++){ // For loop in order to turn off all LEDs at the start and place a mode
     
     pinMode(LED_ARRAY[i], OUTPUT);
     digitalWrite(LED_ARRAY[i], LOW);
@@ -142,4 +142,3 @@ void loop() {
     }
   }
 }
-// The END, good job once again!!
