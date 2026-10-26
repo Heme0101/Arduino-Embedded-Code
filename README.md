@@ -1,6 +1,6 @@
 # Arduino Embedded Fundamentals
 
-A collection of arduino/c++ projects that include sensor and I/O programming. The final project beautifully integrates these into an embedded security I/0 system,
+A collection of arduino/c++ projects that include sensor and I/O programming(February 2024). The final project beautifully integrates these into an embedded security I/0 system,
  in which the output is displayed onto an LCD screen and a lock/unlock state mechanism, utilizing non-blocking timing and hardware asynchrony throughout.
 
 ## Contents
