@@ -22,6 +22,3 @@ is revealed to demonstrate the building process.
 - Requires the [IRremote](https://github.com/Arduino-IRremote/Arduino-IRremote)
   library (Arduino IDE → Library Manager). `LiquidCrystal` ships bundled
   with the Arduino core.
-
-## Author
-Heme
